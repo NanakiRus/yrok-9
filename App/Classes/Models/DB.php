@@ -12,10 +12,10 @@ class DB
         $this->dbh = new \PDO($config['dsn'], $config['login'], $config['pwd']);
     }
 
-    public function execute(string $sql)
+    public function execute(string $sql, array $data)
     {
         $sth = $this->dbh->prepare($sql);
-        return $sth->execute();
+        return $sth->execute($data);
     }
 
     public function query(string $sql, array $data)

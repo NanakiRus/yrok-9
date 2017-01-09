@@ -21,7 +21,7 @@ class About
         $sql = 'UPDATE about SET header = :header, text = :text WHERE id = 1';
         $data[':header'] = $header;
         $data[':text'] = $text;
-        $this->db->query($sql, $data);
+        $this->db->execute($sql, $data);
     }
 
 }

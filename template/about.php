@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php foreach ($this->data['about'] as $text): ?>
-    <form method="post">
+    <form method="post" action="/obychenie/yrok-9/admin/editAbout.php">
         <p><input type="text" size="40" name="header" value="<?php echo $text['header']; ?>"></p>
         <p><textarea name="text" cols="50" rows="3"><?php echo $text['text']; ?></textarea></p>
         <input type="submit">
