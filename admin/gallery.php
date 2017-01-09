@@ -8,5 +8,5 @@ $gallery = new \App\Classes\Models\Gallery($path);
 
 $view = new \App\Classes\View();
 
-$view->assign('gallery', $gallery->getImage());
+$view->assign('gallery', $gallery->getImages());
 $view->display(__DIR__ . '/../template/gallery.php');

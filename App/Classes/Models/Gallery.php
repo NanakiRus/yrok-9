@@ -6,16 +6,16 @@ namespace App\Classes\Models;
 class Gallery
 {
 
-    protected $path;
+    protected $data;
 
     public function __construct($path)
     {
-        $this->path = $path;
+        $this->data = array_slice(scandir($path), 2);
     }
 
-    public function getImage()
+    public function getImages()
     {
-        return array_slice(scandir($this->path), 2);
+        return $this->data;
     }
 
 }
