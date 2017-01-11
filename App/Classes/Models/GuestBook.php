@@ -13,7 +13,7 @@ class GuestBook
         $sql = 'SELECT * FROM guestBook';
         $getAllRecords = $this->db->query($sql, []);
         foreach ($getAllRecords as $record) {
-            $this->objArr[] = new GuestBookRecords($record);
+            $this->objArr[] = new GuestBookRecord($record);
         }
     }
 

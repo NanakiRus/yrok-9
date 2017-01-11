@@ -2,7 +2,7 @@
 
 namespace App\Classes\Models;
 
-class GuestBookRecords
+class GuestBookRecord
 {
     protected $text;
 

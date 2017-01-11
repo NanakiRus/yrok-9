@@ -10,7 +10,7 @@
 <body>
 <div><a href="/obychenie/yrok-9/admin/index.php">Назад</a></div>
 <ul>
-    <li><a href="/obychenie/yrok-9/about.php">Главная</a></li>
+    <li><a href="/obychenie/yrok-9/index.php">Главная</a></li>
     <li><a href="/obychenie/yrok-9/gallery.php">Галлерея</a></li>
     <li><a href="/obychenie/yrok-9/guestBook.php">Гостевая книга</a></li>
 </ul>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes\Models;
+namespace App\Classes;
 
 class ImageUploader
 {
