@@ -2,6 +2,8 @@
 
 namespace App\Classes\Models;
 
+use App\Classes\DB;
+
 class GuestBook
 {
     protected $db;

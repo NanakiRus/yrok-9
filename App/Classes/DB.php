@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes\Models;
+namespace App\Classes;
 
 class DB
 {
@@ -8,7 +8,7 @@ class DB
 
     public function __construct()
     {
-        $config = include __DIR__ . '/../../../connect/config.php';
+        $config = include __DIR__ . '/../../connect/config.php';
         $this->dbh = new \PDO($config['dsn'], $config['login'], $config['pwd']);
     }
 

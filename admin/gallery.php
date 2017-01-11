@@ -4,7 +4,7 @@ require __DIR__ . '/../autoload.php';
 
 $path = __DIR__ . '/../upload';
 
-$gallery = new \App\Classes\Gallery($path);
+$gallery = new \App\Classes\Models\Gallery($path);
 
 $view = new \App\Classes\View();
 
