@@ -32,7 +32,7 @@ class ImageUploader
     public function upload($path)
     {
         if ($this->isUploaded() == true) {
-            move_uploaded_file($this->field['tmp_name'], $path . iconv('UTF-8', 'windows-1251', $this->field['name']));
+            move_uploaded_file($this->field['tmp_name'], $path . '/' . iconv('UTF-8', 'windows-1251', $this->field['name']));
             return true;
         } else {
             return false;
