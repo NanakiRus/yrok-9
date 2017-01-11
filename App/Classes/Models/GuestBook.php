@@ -28,4 +28,11 @@ class GuestBook
         $this->db->execute($sql, [':id' => $id]);
     }
 
+    public function addRecord($author, $text)
+    {
+        $date = date("Y-m-d H:i:s");
+        $sql = 'INSERT INTO guestBook (date, author, text) VALUES (:date, :author, :text)';
+        $this->db->execute($sql, [':date' => $date, ':author' => $author, ':text' => $text]);
+    }
+
 }

@@ -9,14 +9,13 @@
 </head>
 <body>
 <div><a href="/obychenie/yrok-9/admin/index.php">Назад</a></div>
-<ul>
-    <li><a href="/obychenie/yrok-9/about.php">Главная</a></li>
-    <li><a href="/obychenie/yrok-9/gallery.php">Галлерея</a></li>
-    <li><a href="/obychenie/yrok-9/guestBook.php">Гостевая книга</a></li>
-</ul>
-<?php foreach ($this->data['about'] as $text): ?>
-    <h1><?php echo $text['header']; ?></h1>
-    <div><?php echo $text['text']; ?></div>
+<?php foreach ($this->data['gallery'] as $name) : ?>
+    <img width="200" src="/obychenie/yrok-9/upload/<?php echo $name; ?>" />
 <?php endforeach; ?>
+
+<form method="post" enctype="multipart/form-data" action="/obychenie/yrok-9/admin/galleryUploader.php">
+    <input type="file" name="img">
+    <input type="submit">
+</form>
 </body>
 </html>

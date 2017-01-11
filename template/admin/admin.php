@@ -11,8 +11,8 @@
     <article>
         <ul>
             <li><a href="/obychenie/yrok-9/admin/about.php">Редактировать Обо мне</a></li>
-            <li><a href="/obychenie/yrok-9/admin/">Редактировать Галлерею</a></li>
-            <li><a href="/obychenie/yrok-9/admin/">Редактировать Гостевую книгу</a></li>
+            <li><a href="/obychenie/yrok-9/admin/gallery.php">Редактировать Галлерею</a></li>
+            <li><a href="/obychenie/yrok-9/admin/guestBook.php">Редактировать Гостевую книгу</a></li>
         </ul>
     </article>
 </body>

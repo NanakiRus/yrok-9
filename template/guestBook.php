@@ -8,13 +8,18 @@
     <title>Document</title>
 </head>
 <body>
+<div><a href="/obychenie/yrok-9/admin/index.php">Назад</a></div>
 <?php foreach ($this->data['record'] as $record) : ?>
     <article>
         <h2><?php echo $record->getText()['author'];?></h2>
         <p><?php echo $record->getText()['text'];?></p>
         <p><i><?php echo $record->getText()['date'];?></i></p>
-        <a href="/obychenie/yrok-9/admin/deleteGuestBookRecord.php?id=<?php echo $record->getText()['id']; ?>">Удалить запись</a>
     </article>
 <?php endforeach; ?>
+<form method="post" action="/obychenie/yrok-9/addGuestBookRecord.php">
+    <p><input type="text" size="40" name="author" value=""></p>
+    <p><textarea name="text" cols="50" rows="3"></textarea></p>
+    <input type="submit">
+</form>
 </body>
 </html>

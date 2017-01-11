@@ -9,14 +9,12 @@
 </head>
 <body>
 <div><a href="/obychenie/yrok-9/admin/index.php">Назад</a></div>
-<ul>
-    <li><a href="/obychenie/yrok-9/about.php">Главная</a></li>
-    <li><a href="/obychenie/yrok-9/gallery.php">Галлерея</a></li>
-    <li><a href="/obychenie/yrok-9/guestBook.php">Гостевая книга</a></li>
-</ul>
 <?php foreach ($this->data['about'] as $text): ?>
-    <h1><?php echo $text['header']; ?></h1>
-    <div><?php echo $text['text']; ?></div>
+    <form method="post" action="/obychenie/yrok-9/admin/editAbout.php">
+        <p><input type="text" size="40" name="header" value="<?php echo $text['header']; ?>"></p>
+        <p><textarea name="text" cols="50" rows="3"><?php echo $text['text']; ?></textarea></p>
+        <input type="submit">
+    </form>
 <?php endforeach; ?>
 </body>
 </html>

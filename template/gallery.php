@@ -8,13 +8,10 @@
     <title>Document</title>
 </head>
 <body>
+<div><a href="/obychenie/yrok-9/admin/index.php">Назад</a></div>
 <?php foreach ($this->data['gallery'] as $name) : ?>
-    <img width="200" src="/obychenie/yrok-9/upload/<?php echo $name; ?>" />
+    <a href="/obychenie/yrok-9/upload/<?php echo $name; ?>"><img width="200" src="/obychenie/yrok-9/upload/<?php echo $name; ?>" /></a>
 <?php endforeach; ?>
 
-<form method="post" enctype="multipart/form-data" action="/obychenie/yrok-9/admin/galleryUploader.php">
-    <input type="file" name="img">
-    <input type="submit">
-</form>
 </body>
 </html>

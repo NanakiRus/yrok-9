@@ -9,14 +9,13 @@
 </head>
 <body>
 <div><a href="/obychenie/yrok-9/admin/index.php">Назад</a></div>
-<ul>
-    <li><a href="/obychenie/yrok-9/about.php">Главная</a></li>
-    <li><a href="/obychenie/yrok-9/gallery.php">Галлерея</a></li>
-    <li><a href="/obychenie/yrok-9/guestBook.php">Гостевая книга</a></li>
-</ul>
-<?php foreach ($this->data['about'] as $text): ?>
-    <h1><?php echo $text['header']; ?></h1>
-    <div><?php echo $text['text']; ?></div>
+<?php foreach ($this->data['record'] as $record) : ?>
+    <article>
+        <h2><?php echo $record->getText()['author'];?></h2>
+        <p><?php echo $record->getText()['text'];?></p>
+        <p><i><?php echo $record->getText()['date'];?></i></p>
+        <a href="/obychenie/yrok-9/admin/deleteGuestBookRecord.php?id=<?php echo $record->getText()['id']; ?>">Удалить запись</a>
+    </article>
 <?php endforeach; ?>
 </body>
 </html>
