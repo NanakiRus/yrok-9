@@ -15,7 +15,7 @@
         <a class="col-md-4 btn btn-default btn-lg"
            href="/obychenie/yrok-9/admin/index.php">Назад</a>
     </div>
-    <br />
+    <br/>
     <article>
     <?php foreach ($this->data['gallery'] as $name) : ?>
         <img width="200" src="/obychenie/yrok-9/upload/<?php echo $name; ?>"/>

@@ -15,7 +15,8 @@
     <div class="row align-items-start">
         <a class="col-md-4 btn btn-default btn-lg" href="/obychenie/yrok-9/admin/about.php">Редактировать "Обо мне"</a>
         <a class="col-md-4 btn btn-default btn-lg" href="/obychenie/yrok-9/admin/gallery.php">Редактировать Галлерею</a>
-        <a class="col-md-4 btn btn-default btn-lg" href="/obychenie/yrok-9/admin/guestBook.php">Редактировать Гостевую книгу</a>
+        <a class="col-md-4 btn btn-default btn-lg" href="/obychenie/yrok-9/admin/guestBook.php">Редактировать Гостевую
+            книгу</a>
     </div>
 </div>
 </body>

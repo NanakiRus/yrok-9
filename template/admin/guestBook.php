@@ -15,16 +15,18 @@
         <a class="col-md-4 btn btn-default btn-lg"
            href="/obychenie/yrok-9/admin/index.php">Назад</a>
     </div>
-    <br />
+    <br/>
     <article>
-<?php foreach ($this->data['record'] as $record) : ?>
-        <blockquote>
-        <h2><?php echo $record->getText()['author'];?></h2>
-        <p><?php echo $record->getText()['text'];?></p>
-            <footer><?php echo $record->getText()['date'];?></footer>
-        <a class="btn btn-default" href="/obychenie/yrok-9/admin/deleteGuestBookRecord.php?id=<?php echo $record->getText()['id']; ?>">Удалить запись</a>
-        </blockquote>
-<?php endforeach; ?>
+        <?php foreach ($this->data['record'] as $record) : ?>
+            <blockquote>
+                <h2><?php echo $record->getText()['author']; ?></h2>
+                <p><?php echo $record->getText()['text']; ?></p>
+                <footer><?php echo $record->getText()['date']; ?></footer>
+                <a class="btn btn-default"
+                   href="/obychenie/yrok-9/admin/deleteGuestBookRecord.php?id=<?php echo $record->getText()['id']; ?>">Удалить
+                    запись</a>
+            </blockquote>
+        <?php endforeach; ?>
     </article>
 </div>
 </body>
