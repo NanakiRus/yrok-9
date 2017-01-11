@@ -22,4 +22,10 @@ class GuestBook
         return $this->objArr;
     }
 
+    public function deleteRecord($id)
+    {
+        $sql = 'DELETE FROM guestBook WHERE id = :id';
+        $this->db->execute($sql, [':id' => $id]);
+    }
+
 }

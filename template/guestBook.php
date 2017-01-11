@@ -13,9 +13,7 @@
         <h2><?php echo $record->getText()['author'];?></h2>
         <p><?php echo $record->getText()['text'];?></p>
         <p><i><?php echo $record->getText()['date'];?></i></p>
-        <form method="post" action="/obychenie/yrok-9/admin/deleteGuestBookRecord.php">
-            <button type="submit">Удалить</button>
-        </form>
+        <a href="/obychenie/yrok-9/admin/deleteGuestBookRecord.php?id=<?php echo $record->getText()['id']; ?>">Удалить запись</a>
     </article>
 <?php endforeach; ?>
 </body>
